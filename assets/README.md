@@ -1,6 +1,6 @@
 # Ghost Personal Brand Website
 
-This version includes a multi-page GitHub Pages structure.
+This version includes the multi-page GitHub Pages structure and the Ghost hero image asset.
 
 ## Folder structure
 
@@ -13,11 +13,12 @@ services/index.html
 contact/index.html
 assets/css/style.css
 assets/js/main.js
+assets/images/ghost-hero.png
 ```
 
 ## Upload to GitHub Pages
 
-Put everything in the root of your GitHub Pages repository.
+Put everything inside this folder in the root of your GitHub Pages repository.
 
 Your pages will be:
 
@@ -30,9 +31,12 @@ services/
 contact/
 ```
 
-## Editing
+## Important
 
-- Edit the homepage in `index.html`
-- Edit each page in its own folder's `index.html`
-- Edit site styling in `assets/css/style.css`
-- Edit JavaScript in `assets/js/main.js`
+The homepage hero card uses:
+
+```text
+assets/images/ghost-hero.png
+```
+
+Do not move that image unless you also update the image path inside `index.html`.
