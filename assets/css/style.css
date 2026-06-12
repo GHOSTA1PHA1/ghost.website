@@ -138,6 +138,23 @@
       transform: translateY(-2px);
     }
 
+    .button.discord {
+      background: #5865F2;
+      color: white;
+      box-shadow: 0 10px 30px rgba(88, 101, 242, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+    }
+
+    .button.discord:hover {
+      background: #4752C4;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(88, 101, 242, 0.45);
+    }
+
     .hero {
       padding: 5rem 0 3rem;
     }
@@ -475,10 +492,43 @@
     }
 
     footer {
-      padding: 1rem 0 2rem;
+      padding: 1.5rem 0 2.5rem;
       color: var(--muted);
       border-top: 1px solid rgba(255,255,255,0.06);
       margin-top: 2rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    .footer-socials a {
+      color: var(--muted);
+      transition: color 0.22s ease, transform 0.22s ease;
+      display: inline-flex;
+    }
+
+    .footer-socials a:hover {
+      color: var(--accent-2);
+      transform: translateY(-2px);
+    }
+
+    .footer-socials svg {
+      transition: filter 0.22s ease;
+    }
+
+    .footer-socials a:hover svg {
+      filter: drop-shadow(0 0 8px var(--accent));
     }
 
     .muted {
